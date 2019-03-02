@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="250dp"
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_gravity="left"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/passwordText"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:layout_gravity="left"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/signinButtonMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/signupButtonInMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:clickable="true"
+        android:onClick="signUpAction"
+        android:text="Don't have account.? Sign up"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

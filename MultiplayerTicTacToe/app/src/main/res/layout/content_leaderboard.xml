@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LeaderboardActivity"
+    tools:showIn="@layout/activity_leaderboard"
+    android:orientation="vertical">
+
+
+    <!-- leader board title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/leaderBoardIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leader_board_icon"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/leaderBoardTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leader_board_menu_text"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="25dp"
+            />
+    </LinearLayout>
+
+
+    <!-- leader board table -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="A table should be here"
+        android:textAlignment="center"
+        android:padding="100dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+    
+    <!-- leader board support us -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!-- share button-> share with bluetooth, share it etc.. -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsShareImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_share_btn_logo"
+                android:background="@color/colorWhite"
+                android:padding="7dp"/>
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_us_share_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <!-- support us facebook like on coderzcafe page -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsFacebookLikeImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_facebook_like_logo"
+                android:background="@color/colorWhite"
+                android:padding="7dp"
+                />
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_us_facebook_like_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+
+        <!-- support us to tell a friend on sms -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsTellAFirendOnSmsImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_tell_friend_sms"
+                android:background="@color/colorWhite"
+                android:padding="7dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="2dp"/>
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tell_a_friend_by_sms_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+        <!-- support us rate the app on google play store -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsRateAppImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_rate_app_logo"
+                android:background="@color/colorWhite"
+                android:padding="7dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_us_rate_app_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

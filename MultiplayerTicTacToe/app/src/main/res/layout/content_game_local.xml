@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GameLocalActivity"
+    tools:showIn="@layout/activity_game_local"
+    android:orientation="vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:background="@color/colorAccent"
+    android:layout_marginTop="50dp">
+
+    <ScrollView
+        android:id="@+id/gameLocalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- game status -->
+
+            <RelativeLayout
+                android:id="@+id/gameStatusLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- player 1 text and icon -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/p1"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/player1NameTextView"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player1_name_text"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/gameScoreTextViewPlayer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="36sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerHorizontal="true"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="36sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerHorizontal="true"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:id="@+id/gameScoreTextViewPlayer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="36sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerHorizontal="true"
+                        android:padding="3dp"
+                        />
+
+                </LinearLayout>
+
+                <!-- player 2 text and icon -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/p2"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/player2NameTextView"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player2_name_text"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- game board styles -->
+            <GridLayout
+                android:id="@+id/gameBoardGridLayout"
+                android:layout_below="@+id/gameStatusLayout"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:background="@drawable/tic_tac_gameboard"
+                android:columnCount="3"
+                android:rowCount="3"
+                android:layout_marginTop="30dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView_00"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:onClick="gameLogic"
+                    android:scaleType="center"
+                    android:layout_marginTop="15dp"
+                    android:tag="0"/>
+
+                <ImageView
+                    android:id="@+id/imageView_01"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:onClick="gameLogic"
+                    android:scaleType="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:tag="1"/>
+
+                <ImageView
+                    android:id="@+id/imageView_02"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:onClick="gameLogic"
+                    android:scaleType="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:tag="2"/>
+
+                <ImageView
+                    android:id="@+id/imageView_10"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:onClick="gameLogic"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="center"
+                    android:tag="3"/>
+
+                <ImageView
+                    android:id="@+id/imageView_11"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:onClick="gameLogic"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="center"
+                    android:tag="4"/>
+
+                <ImageView
+                    android:id="@+id/imageView_12"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:onClick="gameLogic"
+                    android:scaleType="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:tag="5"/>
+
+                <ImageView
+                    android:id="@+id/imageView_20"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:onClick="gameLogic"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="center"
+                    android:tag="6"/>
+
+                <ImageView
+                    android:id="@+id/imageView_21"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:onClick="gameLogic"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="center"
+                    android:tag="7"/>
+
+                <ImageView
+                    android:id="@+id/imageView_22"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:scaleType="center"
+                    android:onClick="gameLogic"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:tag="8"/>
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_below="@id/gameBoardGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/restartButton"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:drawableLeft="@drawable/restart_icon"
+                    android:text="@string/restart_game_text"
+                    android:background="@color/colorWhite"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_marginVertical="2.5dp"/>
+
+                <!-- my ads view area -->
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

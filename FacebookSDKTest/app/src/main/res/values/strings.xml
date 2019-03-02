@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FacebookSDKTest</string>
+    
+    <string name="facebook_app_id">376911099812816</string>
+    <string name="facebook_login_protocol_scheme">fb376911099812816</string>
+    <string name="facebook_app_secret">0e59f677799662cba5db0a34c0b96a58</string>
+</resources>

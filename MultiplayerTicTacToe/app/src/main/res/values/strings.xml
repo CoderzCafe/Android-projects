@@ -1,0 +1,34 @@
+<resources>
+    <string name="blank_string"> </string>
+    <string name="app_name">TicTacToe Multiplayer</string>
+    <string name="login_app_title">TicTacToe Multiplayer</string>
+    <string name="user_id_hint">User id or email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="or_text">Or,</string>
+    <string name="title_activity_game_local">GameLocalActivity</string>
+    <string name="leader_board_menu_text">Leader board</string>
+    <string name="game_setting_menu_text">Game setting</string>
+    <string name="logout_text">Logout</string>
+    <string name="player1_name_text">Player1</string>
+    <string name="player2_name_text">player2</string>
+    <string name="game_score_text">0 : 0</string>
+    <string name="restart_button_text">Restart</string>
+    <string name="title_activity_leaderboard">LeaderboardActivity</string>
+    <string name="leader_board_text_title">Leader board</string>
+    <string name="forget_password_text">Forget password</string>
+    <string name="support_us_share_text">Share</string>
+    <string name="support_us_facebook_like_text">Like</string>
+    <string name="tell_a_friend_by_sms_text">Tell a friend by sms</string>
+    <string name="support_us_rate_app_text">Rate</string>
+    <string name="title_activity_setting_game">SettingGameActivity</string>
+    <string name="title_activity_game_setting">GameSettingActivity</string>
+    <string name="game_setting_text">Game Setting</string>
+    <string name="setting_sound_text">Sound :</string>
+    <string name="setting_sound_on_text">On</string>
+    <string name="setting_sound_off_text">Off</string>
+    <string name="setting_change_sound_text">Change sound :</string>
+    <string name="setting_save_button_text">Save</string>
+    <string name="is_winner">is winner</string>
+    <string name="restart_game_text">Restart</string>
+</resources>

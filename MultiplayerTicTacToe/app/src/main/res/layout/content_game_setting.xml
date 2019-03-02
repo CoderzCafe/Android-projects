@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LeaderboardActivity"
+    tools:showIn="@layout/activity_game_setting"
+    android:orientation="vertical">
+
+
+    <!-- leader board title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/leaderBoardIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_setting_icon"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/leaderBoardTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_setting_text"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="25dp"
+            />
+    </LinearLayout>
+
+
+    <!-- game sound on or off -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_sound_text"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"/>
+
+        <RadioGroup
+            android:id="@+id/gameSettingSoundRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/gameSettingSoundRadioButtonOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_sound_on_text"
+                android:buttonTint="@color/colorPrimary"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textSize="18sp"
+                android:padding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/gameSettingSoundRadioButtonOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_sound_off_text"
+                android:buttonTint="@color/colorPrimary"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textSize="18sp"
+                android:padding="3dp"
+                android:layout_marginRight="50dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <!-- change the sound -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_change_sound_text"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"/>
+
+        <Spinner
+            android:id="@+id/gameSettingChanegeSoundSpinner"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/gameSettingSaveButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/setting_save_button_text"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+    <!-- leader board support us -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="14dp">
+
+        <!-- share button-> share with bluetooth, share it etc.. -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsShareImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_share_btn_logo"
+                android:background="@color/colorWhite"
+                android:padding="7dp"/>
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_us_share_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <!-- support us facebook like on coderzcafe page -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsFacebookLikeImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_facebook_like_logo"
+                android:background="@color/colorWhite"
+                android:padding="7dp"
+                />
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_us_facebook_like_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+
+        <!-- support us to tell a friend on sms -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsTellAFirendOnSmsImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_tell_friend_sms"
+                android:background="@color/colorWhite"
+                android:padding="7dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="2dp"/>
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tell_a_friend_by_sms_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+        <!-- support us rate the app on google play store -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- button image -->
+            <ImageButton
+                android:id="@+id/supportUsRateAppImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/support_us_rate_app_logo"
+                android:background="@color/colorWhite"
+                android:padding="7dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <!-- button text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/support_us_rate_app_text"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

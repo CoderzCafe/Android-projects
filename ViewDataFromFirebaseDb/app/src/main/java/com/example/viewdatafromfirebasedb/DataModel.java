@@ -1,0 +1,44 @@
+package com.example.viewdatafromfirebasedb;
+
+import java.util.List;
+
+public class DataModel {
+    private String artistId;
+    private String artistName;
+    private String artistGenre;
+
+    public DataModel() {
+
+    }
+
+    public DataModel(String artistId, String artistName, String artistGenre, List<String> artistTrack) {
+        this.artistId = artistId;
+        this.artistName = artistName;
+        this.artistGenre = artistGenre;
+    }
+
+    public String getArtistId() {
+        return artistId;
+    }
+
+    public void setArtistId(String artistId) {
+        this.artistId = artistId;
+    }
+
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
+    }
+
+    public String getArtistGenre() {
+        return artistGenre;
+    }
+
+    public void setArtistGenre(String artistGenre) {
+        this.artistGenre = artistGenre;
+    }
+
+}

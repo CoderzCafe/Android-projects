@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/artistNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="James"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/artistGenreTypeText"
+        android:layout_width="match_parent"
+        android:text="Rock"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        />
+
+    <ListView
+        android:id="@+id/artistTrackListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:divider="#EE3A2D"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+</LinearLayout>

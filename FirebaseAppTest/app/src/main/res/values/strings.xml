@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirebaseAppTest1</string>
+    <string name="enter_your_name">Enter your name</string>
+
+    <array name="spinnerGeneres">
+        <item>Rock</item>
+        <item>Folk</item>
+        <item>Sufi</item>
+        <item>Metal</item>
+    </array>
+</resources>

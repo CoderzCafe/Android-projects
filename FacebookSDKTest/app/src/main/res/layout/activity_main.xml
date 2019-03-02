@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook SDK"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/facebookProfilePictureImageView"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="250dp"
+        android:src="@drawable/broken_image_icon"
+        android:padding="10dp"/>
+    
+    <TextView
+        android:id="@+id/facebookProfileEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Email"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/facebookProfileBirthdayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Birthday"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/facebookProfileFriendsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Friends"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/continueWithFacebookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Personal Rss Feed</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_feed">Add Feed</string>
+    <string name="title_activity_edit_rss_feed">Edit Rss Feed</string>
+    <string name="title_activity_rss_item_view">RSS Item View</string>
+    <string name="ad_unit_id">ca-app-pub-4788077657943231/3984003895</string>
+    <string name="ad_app_id">ca-app-pub-4788077657943231~4446327888</string>
+</resources>

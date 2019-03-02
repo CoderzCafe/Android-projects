@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/settingMenu"
+          android:title="@string/leader_board_menu_text"
+          android:icon="@drawable/icon_settings"
+          app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/settingLeaderboardMenuItem"
+                android:title="@string/leader_board_menu_text"
+                android:icon="@drawable/icon_leader_board"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:id="@+id/settingGamesettingMenuItem"
+                android:title="@string/game_setting_menu_text"
+                android:icon="@drawable/icon_game_setting"
+                app:showAsAction="never"
+                />
+
+            <item
+                android:id="@+id/settingLogoutMenuItem"
+                android:title="@string/logout_text"
+                android:icon="@drawable/icon_logout"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewDataFromFirebaseDb</string>
+    <string name="title1">Show FirebaseAppTest Application data from database ~:</string>
+    <string name="enter_artist_name">Enter artist name</string>
+</resources>
